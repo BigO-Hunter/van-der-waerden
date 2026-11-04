@@ -126,6 +126,12 @@ with receipts (repository, commit, file paths, git blobs above).
 The baseline row is `c = 1/100000`. Landing exactly at `1/100000` **ties** the baseline, and a
 tie starts no run — so a filed row must carry an attained `c` strictly greater than `1/100000`.
 The corpus constant `1/100000` is a conservative value (`Parameters.c`); the construction admits
-a larger `c` (the coefficient budget in `Parameters.lean`, `rich_coefficient`,
-`2·c − (1/100)/80`, is negative throughout `c < 1/16000`), so an attained `c` in
-`(1/100000, 1/8)` is available for the row. The specific filed `c` is a review/filing decision.
+a larger `c`. The transfer `uniform_lower_of_cyclicLowerBound` is `c`-generic, and the constant is
+set by the construction budget: the rich-risk coefficient `(1/100)/80 − 2·c`, hardcoded as
+`21/200000` at `c = 1/100000`. Re-tuning the `c` literals and that coefficient (a parameter
+re-tune, not new math) reaches larger attained `c`; the coefficient stays positive for
+`c < 1/16000`, so attained `c` up to just below `1/16000` is the ceiling of this construction.
+`c = 1/20000` is verified by the assembled proof (5× the baseline; see the proof README).
+**`c > 1/9` (the leading Claimed value) is NOT reachable from this construction** — the ceiling
+`1/16000` is far below `1/9` — so the row is a verified improvement of the baseline and the first
+Lean Verified row for the board, not a rank-1 challenge to the (unverified) Claimed values.
