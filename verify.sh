@@ -8,7 +8,7 @@ set -u
 cd "$(dirname "$0")"
 TARGET=target/QuantitativeVanDerWaerden.lean
 STATEMENT=challenges/van-der-waerden/Statement.lean
-ENTRY=BigOSpeedrun.VanDerWaerden.bound_baseline
+ENTRY=BigOSpeedrun.VanDerWaerden.bound_improved
 CORPUS_SHA256=1caa563bbf7a5602adb8cdbbc06aaf1e3d4d5fe27ed4bebf2bf44cf2937a6593
 FAIL=0
 
