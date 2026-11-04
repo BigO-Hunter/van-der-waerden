@@ -1,5 +1,4 @@
-import Submission.ProgressionColoring.CyclicWitness
-import Submission.ProgressionColoring.UniformTransfer
+import Submission.ProgressionColoring.Main
 
 /-! Target adapter (mirror of `challenges/van-der-waerden/Target.lean`) against the
 vendored corpus solution. `Bound c` is the corpus statement with `1/100000` replaced
