@@ -20,3 +20,11 @@ Verified at c = 1/20000. Open work: further constant improvement (ceiling 1/1600
 ## License
 
 Licensed under the Copy-Free/Stays-Free (CFSF) License — see [LICENSE](LICENSE) ([github.com/darkhipo/cfsf](https://github.com/darkhipo/cfsf)). CFSF: copy-free (use for any purpose) and stays-free (nobody may fence this work). The name is unclaimed in software licensing (checked 2026-11-09) and is deliberately not "Copyfree" — the Copyfree Initiative's certification mark — since CFSF's anti-enclosure condition is excluded by their standard.  Vendored third-party material keeps its upstream license — see [NOTICE](NOTICE.md).
+
+
+## Umbrella layout
+
+- Repository root: the improved `c = 1/20000` submission.
+- `baseline/`: the complete original `vdw-first-rung` repository at source commit `3147afd3e1f193ca28a4bbfce09f5f6aeec91e5d`, merged with full history, including its `c = 1/100000` proof, `verify.sh` and `VERIFICATION.md` receipt.
+
+The baseline is retained as reproducible evidence for the ladder rather than as a duplicate active repository. Build each package from its own directory; both use the same Lean and Mathlib pins.
