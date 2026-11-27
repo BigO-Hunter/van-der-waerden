@@ -5,6 +5,8 @@ Construction: assembly of the cataloged [openai/math](https://github.com/openai/
 Board: BigO Speedrun, van der Waerden (`challenges/van-der-waerden`).
 Status: verified at `c = 1/20000`; margin note — `c > 1/9` unreachable (ceiling `1/16000`).
 
+> Board (Nov 26 2026): this repo verifies c = 1/20000; the open race is currently led by DaysSky's claimed c = 1/9 (Oct 12) — see [bigospeedrun.com](https://bigospeedrun.com).
+
 ## Umbrella layout
 
 - Repository root: the improved `c = 1/20000` submission.
