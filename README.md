@@ -26,5 +26,6 @@ Licensed under the Copy-Free/Stays-Free (CFSF) License — see [LICENSE](LICENSE
 
 - Repository root: the improved `c = 1/20000` submission.
 - `baseline/`: the complete original `vdw-first-rung` repository at source commit `3147afd3e1f193ca28a4bbfce09f5f6aeec91e5d`, merged with full history, including its `c = 1/100000` proof, `verify.sh` and `VERIFICATION.md` receipt.
+- Branch `archive/vdw-first-rung/rung-2` and tags `rung-1` / `rung-2-1/20000`: the source's rung-2 retune to `c = 1/20000` (`2c748a3`) and its GREEN 6/6 verification receipt (`20961db4d1`), carried over losslessly from `vdw-first-rung` on 2026-11-26 before that shell was deleted.
 
 The baseline is retained as reproducible evidence for the ladder rather than as a duplicate active repository. Build each package from its own directory; both use the same Lean and Mathlib pins.
